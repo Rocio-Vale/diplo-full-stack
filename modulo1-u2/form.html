@@ -5,28 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h1>Contacto</h1>
-    <form action="" method="">
-        <p>
-            <label for="nom">Nombre y Apellido</label>
-            <input type="text" name="nombre" placeholder="Nombre y Apellido">
-        </p>
+    <div class="general">
+        <div class="cabecera">
+            <h1>Contacto</h1>
+        </div>
+        <form action="" method="">
+            <p>
+                <label for="nom">Nombre y Apellido</label>
+                <input type="text" name="nombre" placeholder="Nombre y Apellido">
+            </p>
 
-        <p>
-            <label for="email">E-mail</label>
-            <input type="email" name="email" placeholder="E-mail">
-        </p>
+            <p>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" placeholder="E-mail">
+            </p>
 
-        <p>
-            <label for="telefono">Teléfono</label>
-            <input type="tel" name="telefono" placeholder="Teléfono">
-        </p>
+            <p>
+                <label for="telefono">Teléfono</label>
+                <input type="tel" name="telefono" placeholder="Teléfono">
+            </p>
 
-        <p>
-            <label for="contact">Prefiero que me contacten mediante: </label>
+            <p>
+                <label for="contact">Prefiero que me contacten mediante: </label>
             <ul>
                 <li><input type="radio" name="contact" value="email">
                     <label for="">E-mail</label>
@@ -36,18 +40,23 @@
                     <label for="">Teléfono</label>
                 </li>
             </ul>
-        </p>
+            </p>
 
-        <p>
-            <label for="mensaje">Mensaje</label>
-            <textarea name="mensaje" id="mensaje"></textarea>
-        </p>
+            <p>
+                <label for="mensaje">Mensaje</label>
+            </p>
+            <p>
+                <textarea name="mensaje" id="mensaje"></textarea>
+            </p>
 
-        <p>
-            <input type="submit" value="ENVIAR">
-            <input type="reset" value="BORRAR">
-        </p>
-    </form>
+            <p>
+                <input type="submit" value="ENVIAR">
+                <input type="reset" value="BORRAR">
+            </p>
+        </form>
+
+    </div>
 
 </body>
+
 </html>

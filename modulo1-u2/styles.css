@@ -1,0 +1,49 @@
+.general{
+    background-color: #E1EACD;
+    width: 700px;
+    border: 3px solid #280A3E ;
+    box-sizing: border-box;
+    margin-left: 20px;
+}
+
+.destacado{
+    color: #00401d;
+    font-weight: 1000;
+    font-style: normal;
+}
+
+.cabecera{
+    text-align: center;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #280A3E;
+    background-color: #689B8A;
+    padding-left: 20px;
+    text-transform: uppercase;
+}
+
+h3, h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #CFAB8D;
+    color: #280A3E;
+    padding-left: 20px;
+}
+
+p{
+    padding-left: 40px;
+    font-style: italic;
+}
+
+ol, ul{
+    padding-left: 60px;
+}
+
+input{
+    background-color: #CFAB8D;
+}
+
+
+
+
