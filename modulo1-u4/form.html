@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="general">
+
+        <div class="cabecera">
+            <h1 class="titulos"><i class="fa-solid fa-envelope"></i> Contacto</h1>
+        </div>
+
+        <form action="" method="">
+            <p>
+                <label for="nom"><i class="fa-solid fa-building"></i> Nombre y Apellido</label>
+                <input type="text" name="nombre" placeholder="Nombre o Razón Social">
+            </p>
+
+            <p>
+                <label for="email"><i class="fa-solid fa-at"></i> E-mail</label>
+                <input type="email" name="email" placeholder="example@mail.com">
+            </p>
+
+            <p>
+                <label for="telefono"><i class="fa-solid fa-phone"></i> Teléfono</label>
+                <input type="tel" name="telefono" placeholder="999-9999999">
+            </p>
+
+            <p>
+                <label for="mensaje"><i class="fa-solid fa-message"></i> Mensaje</label>
+            </p>
+            <p>
+                <textarea name="mensaje" id="mensaje"></textarea>
+            </p>
+
+            <p>
+                <label for="contact">Prefiero que me contacten mediante: </label>
+            <ul>
+                <li><input type="radio" name="contact" value="email">
+                    <label for="">E-mail</label>
+                </li>
+                <li>
+                    <input type="radio" name="contact" value="telefono">
+                    <label for="">Teléfono</label>
+                </li>
+            </ul>
+            </p>
+
+            <p>
+                <input type="submit" value="ENVIAR">
+                <input type="reset" value="BORRAR">
+            </p>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
