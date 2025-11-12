@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+/* font-family: "Alfa Slab One", serif*/
+/* font-family: "Inria Sans", sans-serif; */
+
+body {
+    margin: 0;
+    background-color: #dadada;
+}
+
+/* ------------------ header  */
+
+header {
+    background-color: #041E42;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    margin-left: 15px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+}
+
+nav ul li {
+    flex-grow: 1;
+}
+
+nav ul li a {
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 300;
+    font-size: medium;
+    color: white;
+    text-decoration: none;
+    padding: 3px 15px;
+    margin: 5px;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #ffa502;
+    border-top: 1px solid #FFDE59;
+}
+
+nav ul li a.activo {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #ffa502;
+}
+
+/* ----------------- fin header */
+
+
+.holder-index {
+    max-width: auto;
+    margin: 0;
+
+}
+
+.holder {
+    max-width: 1024px;
+    font-family: "Inria Sans", sans-serif;
+    margin: 0 auto;
+}
+
+.holder * {
+    margin: 0;
+}
+
+/* --------------------  home */
+
+.portada {
+    background-image: url('../img/portada.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    font-family: "Inria Sans", sans-serif;
+    color: white;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 500px;
+}
+
+.portada .logotipo {
+    text-align: center;
+    padding: 10px;
+    margin-top: 4%;
+}
+
+.portada .logotipo img {
+    filter: drop-shadow(20px 20px 20px #000000);
+}
+
+.portada .logotipo h1 {
+    font-family: "Alfa Slab One", serif;
+    letter-spacing: 10px;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+    font-size: 50px;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.portada .logotipo h2 {
+    font-size: 35px;
+    font-style: italic;
+    font-weight: lighter;
+    margin: 0;
+    padding: 20px;
+    text-shadow: -1px -1px 50px rgba(0, 0, 0, 1);
+    letter-spacing: 1px;
+}
+
+.portada p {
+    width: 70%;
+    font-weight: lighter;
+    font-size: 18px;
+    font-style: italic;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 4px 4px 14px rgba(0, 0, 0, 1);
+}
+
+
+footer {
+    background-color: #000000;
+    color: white;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* -------------------- fin home */
+
+/*  -----------------nosotros */
+
+.titulo {
+    text-align: center;
+    color: #202020;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.linea {
+    width: 70%;
+    height: 1px;
+    background-color: #041E42;
+    margin: 40px auto;
+}
+
+.col {
+    display: flex;
+}
+
+.nos {
+    margin: 50px 0;
+}
+
+.nos h2 {
+    font-size: smaller;
+    color: #555555;
+    margin: 30px;
+}
+
+.col .caja {
+    text-align: center;
+    margin: 30px;
+}
+
+.col .caja i {
+    font-size: 50px;
+    color: #041E42;
+}
+
+.col .caja h3 {
+    margin: 10px;
+    color: #F7A01D;
+    font-size: 30px;
+}
+
+.col .caja p {
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+.nosotros h2 {
+    font-size: 40px;
+}
+
+.personas {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.persona {
+    margin: 20px;
+    padding: 10px;
+    max-width: 200px;
+    background-color: #041E42;
+    text-align: center;
+    box-shadow: -15px -15px 0px 0px rgba(31, 31, 31, 0.75);
+}
+
+.persona img {
+    box-shadow: 15px 15px 0px 0px rgba(247, 160, 29, 1);
+}
+
+.persona h4 {
+    color: #cfd0d1;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    margin: 20px 0 0 0;
+}
+
+.persona h5 {
+    color: #FFDE59;
+    font-weight: lighter;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    letter-spacing: 1px;
+    margin: 10px;
+}
+
+.persona p {
+    color: #cfd0d1;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-style: italic;
+}
+
+/*  ----------------- fin nosotros */
+
+
+/*  -----------------servicios */
+
+.serv h3 {
+    font-size: 40px;
+    margin: 50px auto;
+}
+
+.servicios {
+
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.servicio {
+    min-width: 150px;
+    width: 20vw;
+    border: 1px solid #021125;
+    text-align: center;
+    margin: 20px;
+    align-items: stretch;
+    background-color: #ffffff;
+}
+
+.portada-servicio {
+    min-width: 150px;
+    position: relative;
+    margin: 0;
+}
+
+
+.servicio img {
+    min-width: 150px;
+    width: 20vw;
+    margin: 0;
+     border: 1px solid #ffffff;
+}
+
+.servicio h4 {
+    min-width: 150px;
+    padding: 10px;
+    position: absolute;
+    bottom: 5%;
+    color: #F7A01D;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    border-top: 1px solid #F7A01D;
+    border-bottom: 1px solid #F7A01D;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+
+.servicio p {
+    min-width: 150px;
+    margin: 0;
+    color: #C9D6E3;
+    padding: 10px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    color: #000000;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.servicio:hover{
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.70);
+}
+
+/*  ----------------- fin servicios */
