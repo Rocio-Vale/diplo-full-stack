@@ -35,7 +35,7 @@ nav ul li {
 nav ul li a {
     font-family: "Inria Sans", sans-serif;
     font-weight: 300;
-    font-size: medium;
+    font-size: 14px;
     color: white;
     text-decoration: none;
     padding: 3px 15px;
@@ -86,6 +86,7 @@ nav ul li a.activo {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     min-width: 500px;
 }
 
@@ -109,25 +110,31 @@ nav ul li a.activo {
 }
 
 .portada .logotipo h2 {
-    font-size: 35px;
+    font-size: 30px;
     font-style: italic;
     font-weight: lighter;
-    margin: 0;
-    padding: 20px;
+    margin: 20px 0px 10px 0px;
     text-shadow: -1px -1px 50px rgba(0, 0, 0, 1);
     letter-spacing: 1px;
 }
 
 .portada p {
-    width: 70%;
     font-weight: lighter;
+    color: #cecece;
     font-size: 18px;
     font-style: italic;
+    max-width: 600px;
     margin: 0;
-    padding: 10px;
+    padding: 0px;
     text-align: center;
     text-shadow: 4px 4px 14px rgba(0, 0, 0, 1);
+    background-color: hsla(0, 0%, 0%, 0.5);
+    border-radius: 10px;
+    border-left: 2px solid #cc7a00;
+    border-right: 2px solid #cc7a00;
+
 }
+
 
 
 footer {
@@ -146,29 +153,22 @@ footer {
     text-align: center;
     color: #202020;
     letter-spacing: 2px;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: lighter;
+    color: #555555;
+    margin: 30px;
 }
 
-.linea {
-    width: 70%;
-    height: 1px;
-    background-color: #041E42;
-    margin: 40px auto;
+.titulo h2 {
+    margin: 50px auto;
+}
+
+.nos .titulo p {
+    font-size: x-large;
 }
 
 .col {
     display: flex;
-}
-
-.nos {
-    margin: 50px 0;
-}
-
-.nos h2 {
-    font-size: smaller;
-    color: #555555;
-    margin: 30px;
 }
 
 .col .caja {
@@ -192,9 +192,6 @@ footer {
     letter-spacing: 1px;
 }
 
-.nosotros h2 {
-    font-size: 40px;
-}
 
 .personas {
     display: flex;
@@ -243,47 +240,54 @@ footer {
 
 /*  -----------------servicios */
 
-.serv h3 {
-    font-size: 40px;
+.serv .titulo h3 {
+    font-size: 30px;
     margin: 50px auto;
 }
 
 .servicios {
-
     display: flex;
     gap: 5px;
     flex-wrap: wrap;
     align-items: stretch;
-    justify-content: space-around;
+    justify-content: center;
     margin: 10px;
 }
 
+.servicio,
+.servicio .portada-servicio,
+.servicio img,
+.servicio h4 {
+    min-width: 160px;
+    max-width: 250px;
+}
+
 .servicio {
-    min-width: 150px;
     width: 20vw;
     border: 1px solid #021125;
     text-align: center;
     margin: 20px;
     align-items: stretch;
     background-color: #ffffff;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    transition: all ease 0.5s;
+
 }
 
 .portada-servicio {
-    min-width: 150px;
     position: relative;
     margin: 0;
 }
 
 
 .servicio img {
-    min-width: 150px;
     width: 20vw;
     margin: 0;
-     border: 1px solid #ffffff;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
 }
 
 .servicio h4 {
-    min-width: 150px;
     padding: 10px;
     position: absolute;
     bottom: 5%;
@@ -312,8 +316,216 @@ footer {
     font-size: 14px;
 }
 
-.servicio:hover{
-    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.70);
+.servicio:hover {
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 1);
+    transform: scale(1.1);
 }
 
 /*  ----------------- fin servicios */
+
+/*  ----------------- galeria */
+
+.galeria * {
+    margin: 0;
+}
+
+.gal .titulo h3 {
+    margin: 50px auto;
+}
+
+.gal .titulo img {
+    width: 100px;
+}
+
+.galeria .diseño {
+    display: flex;
+    margin: 50px 0;
+    background-color: #021125;
+    padding: 5px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.galeria .diseño:nth-child(3) {
+    flex-direction: row-reverse;
+}
+
+.galeria .diseño .titulo,
+.galeria .diseño .imagenes {
+    display: flex;
+    width: 50%;
+}
+
+.galeria .diseño .imagenes {
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.galeria .diseño .titulo {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.galeria .diseño .titulo h4 {
+    font-size: x-large;
+    color: white;
+}
+
+.galeria .diseño .imagen {
+    max-width: 240px;
+    line-height: 0;
+    border: 1px solid #041E42;
+    transition: all ease 0.5s;
+}
+
+.galeria .diseño .imagen img {
+    width: 100%;
+
+}
+
+.galeria .diseño .imagen:hover {
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 1);
+    transform: scale(1.5);
+    z-index: 1;
+}
+
+hr {
+    height: 4px;
+}
+
+/*  ----------------- fin galeria */
+
+/*  ----------------- novedades */
+
+.nov .novedad {
+    border: 1px solid #021125;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    background-color: #021125;
+    color: #ffffff;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nov .novedad h4,
+.nov .novedad p {
+    font-weight: lighter;
+    letter-spacing: 1px;
+    padding: 5px auto;
+}
+
+.nov .novedad p {
+    font-size: 13px;
+}
+
+.novedad .producto {
+    width: 200px;
+}
+
+.novedad .producto h4 {
+    text-align: center;
+    margin: 10px auto;
+}
+
+.novedad .producto img {
+    display: block;
+    margin: 0 auto;
+}
+
+/*  ----------------- fin novedades */
+
+/*  ----------------- contacto */
+
+.contacto {
+    display: flex;
+    gap: 20px;
+}
+
+.contacto h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contacto div {
+    width: 100%;
+    margin: 0 20px;
+}
+
+.formulario p {
+    display: flex;
+    margin: 5px 0;
+}
+
+.formulario p label {
+    min-width: 80px;
+}
+
+.formulario p input,
+.formulario p textarea {
+    width: 100%;
+    background-color: #041E42;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #999;
+    font-size: 14px;
+    padding: 6px 10px;
+}
+
+.formulario textarea {
+    resize: none;
+    height: 150px;
+}
+
+.formulario p label {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 0 10px;
+}
+
+.formulario p:nth-child(4) {
+    align-items: start;
+}
+
+.formulario .acciones {
+    margin: 20px 0;
+}
+
+.formulario input[type="submit"] {
+    background-color: #cc7a00;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 16px;
+    padding: 6px 20px;
+    width: auto;
+    position: relative;
+    left: 80%;
+    cursor: pointer;
+}
+
+.cont .datos p {
+    font-size: 14px;
+}
+
+.cont .datos ul li {
+    font-size: 13px;
+    list-style: none;
+    margin: 10px;
+}
+
+.cont .datos i {
+    color: #cc7a00;
+}
+
+.cont{
+    height: 700px;
+}
+
+
+
+/*  ----------------- fin contacto */
