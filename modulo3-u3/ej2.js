@@ -11,6 +11,3 @@ cant = cuadroDeTexto.addEventListener("keyup", () => {
     }
     cantCarac.innerText = contador;
 })
-
-
-
